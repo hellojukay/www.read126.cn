@@ -29,8 +29,8 @@ unless ($url) {
     printf "please enter url link\n";
     exit(1);
 }
-my $text     = get($url);
-my @novels    = get_novels($text);
+my $text   = get($url);
+my @novels = get_novels($text);
 foreach my $novel (@novels) {
     print "$novel\n";
 }
